@@ -1,0 +1,340 @@
+/* header and navigation */
+body{
+  margin-left: 25px;
+}
+
+header{
+margin: -10px -10px 10px -35px;
+padding: 10px;
+background-color: black;
+color: white;
+}
+
+.wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.navigation ul{
+  text-align: right;
+}
+
+.navigation ul li{
+  display: inline-block;
+  padding: 8px;
+}
+
+.navigation a{
+  font-family: monospace;
+  display: flex;
+  color: black;
+  text-decoration: none;
+  padding: 10px;
+  background-color:white;
+}
+
+.navigation a:hover{
+  text-decoration: underline;
+}
+
+.current-page a{
+  background-color: lavender;
+}
+
+h1, p, label, a{
+  font-family: monospace;
+}
+
+/*homepage*/
+.home-title{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 40px;
+}
+
+/* all outfits page */
+/* searchbar */
+#searchbar{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#search{
+  padding: 5px;
+  width:220px;
+  border-style: solid;
+  border-color: black;
+  margin-left: 10px;
+  z-index: 1;
+}
+
+#search-button{
+  width: 30px;
+  height: 29px;
+  background-color: white;
+  border-style: none;
+  margin-left: -5px;
+}
+
+#search-button img{
+  height: 21px;
+  width: 21px;
+}
+
+#search-button:hover{
+  filter: brightness(.5);
+  cursor: pointer;
+}
+
+.add-button{
+  text-decoration: none;
+  text-align: center;
+  font-size: 16px;
+  width: 15px;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  font-family: monospace;
+  border-style: solid;
+  border-color: white;
+}
+
+.add-button:hover{
+  background-color: lavender;
+  color: black;
+  border-style: solid;
+  border-color: black;
+  cursor: pointer;
+}
+
+.all-images-title{
+  margin-left: 10px;
+}
+
+.all-images-wrapper{
+margin-right: 25px;
+}
+
+.image{
+  object-fit: cover;
+  height: 300px;
+  width: 300px;
+  margin: 10px;
+}
+
+.image:hover{
+  -webkit-filter: brightness(0.5);
+  filter: brightness(0.5);
+  cursor: pointer;
+}
+
+/*upload image page*/
+.messages{
+  font-size: 15px;
+  color: purple;
+  margin-bottom: 10px;
+
+}
+.go-back-button{
+  text-decoration: none;
+  font-family: monospace;
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  align-self: flex-start;
+}
+
+.go-back-button:hover{
+  text-decoration: underline;
+}
+
+.form-wrapper{
+  display: flex;
+  flex-direction: column;
+}
+
+.group_label_input {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0 10px 0;
+  font-size: 16px;
+}
+
+#image_desc{
+  width: 340px;
+  height: 100px;
+  resize: none;
+  border-style: solid;
+  border-color: black;
+}
+
+.wider_button{
+  width: 100px;
+  margin-left: 250px;
+}
+
+/*all tags page*/
+.all-tags-wrapper{
+  margin: 30px 0 0 10px;
+}
+
+.all-tags-wrapper a{
+  font-size: 18px;
+  color: black;
+  text-decoration: none;
+  display: block;
+  margin: 15px 0 15px 0;
+}
+
+.all-tags-wrapper a:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/*details page*/
+.details-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.details-wrapper h1 {
+  text-align: center;
+}
+
+.details-wrapper p{
+  font-size: 14px;
+  margin-top: -8px;
+  align-self: center;
+}
+
+.icons-wrapper{
+  display: flex;
+  flex-direction: row;
+  width: 580px;
+  justify-content: flex-end;
+  margin-top: -45px;
+  align-items: baseline;
+}
+
+.delete-image-button{
+  margin-left: 20px;
+  border-style: none;
+  background-color: white;
+  cursor: pointer;
+}
+
+.icon2{
+  padding-bottom: 4px;
+  display: flex;
+  flex-direction: column;
+}
+
+.delete-image-button img{
+  height: 35px;
+  width: 35px;
+  margin-bottom: -13px;
+  margin-left: -15px;
+}
+
+.edit-tag-form-wrapper{
+  margin-top: -30px;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.radio-wrapper{
+  display: flex;
+  flex-direction: row;
+  margin: 10px 0 0 -20px;
+  font-size: 14px;
+  z-index: 1;
+}
+
+.input-wrapper{
+  display: flex;
+  flex-direction: row;
+  margin-top: -15px;
+  z-index: 0;
+}
+
+.edit-tag-button{
+  margin: 15px 0 0 10px;
+  width: 25px;
+  height: 20px;
+  background-color: black;
+  color:white;
+  border-style: none;
+}
+
+.edit-tag-button:hover{
+  cursor: pointer;
+}
+
+.bigger-button{
+  height: 30px;
+  width: 30px;
+  font-size: 20px;
+}
+
+/*From component library, by hl685, woa4 */
+#popup {
+  background-color: lavender;
+  border: solid black;
+  text-align: center;
+  padding: 5px;
+  width: 200px;
+  position: absolute;
+  margin-top: 150px;
+}
+
+#popup p {
+margin-top: 0;
+}
+
+.conf-buttons-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.confirmation-button{
+  background-color: black;
+  cursor: pointer;
+  color: white;
+  border-style: none;
+  height: 20px;
+}
+
+.cite a {
+  color:black;
+}
+
+.details-image{
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+}
+
+.hidden {
+  display: none;
+}
+
+.descp-and-tags{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-tags{
+  width:400px;
+  text-align: center;
+}
