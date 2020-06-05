@@ -117,7 +117,9 @@ h1, p, label, a{
 }
 
 .all-images-wrapper{
-margin-right: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .image{
